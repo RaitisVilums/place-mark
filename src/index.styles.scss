@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700;900&family=Oswald:wght@300;400;700&family=Poppins:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --primary: #3498db; /* Primary color, used for important elements and calls-to-action. */
+  --secondary: #f1c40f; /* Secondary color, used for secondary actions or highlights. */
+  --tertiary: #2ecc71; /* Tertiary color, used for specific elements for emphasis. */
+  --quaternary: #e67e22; /* Quaternary color, used for specific elements that require additional differentiation. */
+
+  --light-grey: #ecf0f1; /* Light grey color, used for backgrounds or disabled elements. */
+  --dark-grey: #34495e; /* Dark grey color, used for text and some specific elements. */
+
+  --success: #27ae60; /* Success message color. */
+  --error: #e74c3c; /* Error message color. */
+
+  --white: #ffffff; /* White color, used for text on darker backgrounds. */
+  --black: #000000; /* Black color, used for text on lighter backgrounds. */
+
+  --box-shadow-soft: 0 0.2px 0.6px rgba(0, 0, 0, 0.26);
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: var(--black);
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  background: var(--light-grey);
+  display: grid;
+  place-content: center;
+}
+
+main {
+  margin-top: 6rem;
+  max-width: 144rem;
+  width: 100%;
+}

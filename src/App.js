@@ -1,25 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-function App() {
+import Root from "./Pages/Root/root";
+import ErrorPage from "./Pages/Error/error";
+import HomePage from "./Pages/Home/home.page";
+import UsersPage from "./Pages/Users/users.page";
+import PlacePage from "./Pages/Place/place.page";
+import { ScrollContextProvider } from "./Context/scroll.context";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Root />,
+    errorElement: <ErrorPage />,
+    children: [
+      {
+        path: "/",
+        element: <HomePage />,
+      },
+      {
+        path: "/users",
+        element: <UsersPage />,
+      },
+      {
+        path: "/:userId/places",
+        element: <PlacePage />,
+      },
+    ],
+  },
+]);
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ScrollContextProvider>
+      <RouterProvider router={router} />
+    </ScrollContextProvider>
   );
-}
+};
 
 export default App;
