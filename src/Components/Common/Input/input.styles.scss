@@ -1,0 +1,36 @@
+.form-control {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+
+  & label {
+    font-size: 1.6rem;
+    font-weight: 600;
+  }
+
+  & input {
+    min-width: 32rem;
+    width: 100%;
+    padding: 1rem;
+    font-family: inherit;
+    border: 2px solid var(--tertiary);
+    border-radius: 1.5rem;
+    outline: none;
+  }
+
+  & textarea {
+    min-width: 32rem;
+    max-width: 100%;
+    outline: none;
+    padding: 1rem;
+    font-family: inherit;
+    border: 2px solid var(--tertiary);
+    border-radius: 1.5rem;
+  }
+
+  & p {
+    color: red;
+    font-size: 1.4rem;
+  }
+}

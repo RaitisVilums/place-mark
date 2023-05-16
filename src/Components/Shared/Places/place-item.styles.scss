@@ -1,0 +1,47 @@
+.place-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid var(--tertiary);
+  padding: 2rem;
+  border-radius: 1.5rem;
+
+  &__image {
+    border: 1px solid var(--tertiary);
+    overflow: hidden;
+    border-radius: 1.5rem;
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    width: 50%;
+
+    & h2 {
+      font-size: 2.5rem;
+    }
+
+    & h3 {
+      font-size: 1.6rem;
+    }
+    & p {
+      font-size: 1.6rem;
+      text-align: justify;
+    }
+  }
+
+  &__map {
+    border-radius: 1.5rem;
+  }
+
+  &__actions {
+    border-bottom: 1px solid var(--tertiary);
+    border-top: 1px solid var(--tertiary);
+    border-radius: 1rem;
+    padding: 1rem;
+  }
+}

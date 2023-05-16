@@ -1,9 +1,34 @@
 .users {
   width: 100%;
   display: flex;
-  gap: 5rem;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5rem;
+  flex-wrap: wrap;
+  gap: 2rem;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--tertiary);
+    padding: 2rem;
+    border-radius: 1.5rem;
+
+    & h1 {
+      font-size: 3.2rem;
+      text-transform: uppercase;
+    }
+  }
 }
 
 .feedback {
   margin-top: 5rem;
+
+  & h2 {
+    font-size: 3.2rem;
+    text-transform: uppercase;
+  }
 }

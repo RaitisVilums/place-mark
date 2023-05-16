@@ -22,7 +22,7 @@ const NavLinks = () => {
         </NavLink>
       </li>
       <li>
-        <NavLink to={"/my-places"} className={`main-navigation__item`}>
+        <NavLink to={`/:userId/places`} className={`main-navigation__item`}>
           my places
         </NavLink>
       </li>
@@ -33,18 +33,10 @@ const NavLinks = () => {
       </li>
       <li>
         <NavLink
-          to={"/login"}
+          to={"/auth"}
           className={`main-navigation__item main-navigation__item--login`}
         >
           log in
-        </NavLink>
-      </li>
-      <li>
-        <NavLink
-          to={"/signup"}
-          className={`main-navigation__item main-navigation__item--signup`}
-        >
-          sign up
         </NavLink>
       </li>
     </ul>

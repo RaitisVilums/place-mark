@@ -16,6 +16,17 @@
       border-bottom: 2px solid var(--white);
     }
   }
+
+  &__item--login {
+    border: 2px solid var(--white);
+    border-radius: 1rem;
+
+    &:hover {
+      background: var(--white);
+      color: var(--tertiary);
+      border: 2px solid var(--tertiary);
+    }
+  }
 }
 
 .active {

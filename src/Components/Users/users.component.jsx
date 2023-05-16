@@ -21,7 +21,6 @@ const Users = () => {
       rating: 5,
     },
   ];
-  console.log(USERS);
   return (
     <MainWrapper>
       <div className="users">
@@ -30,7 +29,7 @@ const Users = () => {
           <input type="search" />
           <UserList items={USERS} />
         </div>
-        <div className="users__best-reviews">
+        <div className="users__content">
           <h1>Highly rated users</h1>
           <input type="search" />
           <UserList items={USERS} />

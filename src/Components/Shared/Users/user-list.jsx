@@ -21,6 +21,7 @@ const UserList = (props) => {
           image={user.image}
           name={user.name}
           placeCount={user.places}
+          rating={user.rating}
         />
       ))}
     </ul>
